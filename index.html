@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webポートフォリオ/InLab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="hero__background-video-container">
+            <video class="hero__background-video" autoplay loop muted playsinline poster="[placeholder-inlab-animation-fallback.jpg]">
+                <source src="[placeholder-inlab-animation.gif]" type="video/mp4">
+            </video>
+            <div class="hero__overlay"></div>
+        </div>
+        <div class="hero__content js-fade-in">
+            <h1 class="hero__catch-copy">InLab</h1>
+            <!-- <h1 class="hero__catch-copy">デザイナーの理想を形にすることで、技術力も成長できたプロジェクト</h1> -->
+            <p class="hero__project-sub">デザイナーの理想を形にすることで、技術力も成長できたプロジェクト</p>
+            <p class="hero__user-info"><strong>フロントエンド（仮想空間・UI）担当</strong></p>
+            <div class="hero__skill-tags">
+                <span class="skill-tag">デザイナーとの共創</span>
+                <span class="skill-tag">粘り強い課題解決</span>
+                <span class="skill-tag">技術的好奇心</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="project-overview" class="section js-fade-in">
+            <div class="container">
+                <h2 class="section-title">Project Overview</h2>
+                <p class="section-subtitle">このプロジェクトが生まれた理由</p>
+                
+                <div class="overview__details">
+                    <div class="overview__text">
+                        <h3 class="heading-sub">開発の背景</h3>
+                        <p>ゼミの共同開発における「誰が研究室にいるか分からず、<strong>コミュニケーションが生まれにくい</strong>」という課題がありました。</p>
+                        
+                        <h3 class="heading-sub">私たちのゴール</h3>
+                        <p>単なる在室管理ではなく、「<strong>行きたくなる研究室</strong>」を創出することでした。仮想空間やアバターの着せ替え機能による「楽しさ」の付加で、コミュニケーションの促進を目指しました。</p>
+
+                        <ul class="project-info-list">
+                            <li><strong>製作期間：</strong> 約4ヶ月</li>
+                            <li><strong>チーム人数：</strong> 12人</li>
+                            <li><strong>自身の役割：</strong> GitHubリポジトリ管理 / 仮想空間実装(Unity) / UI実装(Unity)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview__visual">
+                        <div class="comparison-block">
+                            <div class="comparison-item">
+                                <img src="source/before-communication.png" alt="Before: 誰がいるか分からない図" class="comparison-image">
+                                <p class="caption">誰がいるか分からず、入りづらい…</p>
+                            </div>
+                            <div class="comparison-item">
+                                <img src="source/after-inlab.png" alt="After: 仮想空間のInLabの図" class="comparison-image">
+                                <p class="caption">いつでも繋がれる、活気ある仮想研究室へ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="overview__features">
+                    <img src="source/avatar.png" alt="主要機能1: アバター" class="feature-image">
+                    <img src="source/dressup.png" alt="主要機能2: アバターの着せ替え" class="feature-image">
+                    <img src="source/members.png" alt="主要機能3: メンバーリスト" class="feature-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="my-challenge" class="section section--highlight js-fade-in">
+            <div class="container">
+                <h2 class="section-title">My Challenge</h2>
+                <p class="section-subtitle section-subtitle--intro">このプロジェクトで私が最も情熱を注いだのは、デザイナーの描く理想の<strong>体験</strong>を実現することでした。ここでは、その過程で直面した2つの大きな挑戦と、解決へのアプローチを紹介します。</p>
+
+                <article class="challenge-article js-fade-in">
+                    <h3 class="challenge-title">挑戦①：「ないなら創る」- Blenderでの3Dモデル制作</h3>
+                    
+                    <div class="challenge-content">
+                        <div class="challenge-text">
+                            <h4 class="challenge-heading">The Challenge (課題)</h4>
+                            <p>デザイナーがイメージする「サイコロみたいな角が削れた立方体」の地面モデルが、既存のアセットストアでは見つかりませんでした。</p>
+                            
+                            <h4 class="challenge-heading">My Approach (思考と行動)</h4>
+                            <ul>
+                                <li>「アセットがないから諦める」という選択肢ではなく、「どうすれば実現できるか」を考え、「<strong>Blenderなら自作できる</strong>」という仮説に至りました。</li>
+                                <li><strong>Blenderは未経験</strong>の状態から自ら学習し、デザイナーのイメージを再現した3Dモデルを作成しました。</li>
+                            </ul>
+                            
+                            <h4 class="challenge-heading">The Result (結果)</h4>
+                            <p>デザイナーのイメージ通りの3Dモデルを自作し、<strong>再現</strong>しました。作品の世界観構築に大きく貢献し、「ないなら創る」という課題解決方法を実践することができました。</p>
+                        </div>
+                        <div class="challenge-visual">
+                            <div class="challenge-process-grid">
+                                <div class="process-step">
+                                    <img src="[placeholder-design-sketch.jpg]" alt="デザインスケッチ" class="process-image">
+                                    <p class="caption">1. デザインスケッチ</p>
+                                </div>
+                                <div class="process-step">
+                                    <img src="[placeholder-blender-wip.jpg]" alt="Blenderでの制作過程" class="process-image">
+                                    <p class="caption">2. Blenderでの制作</p>
+                                </div>
+                                <div class="process-step">
+                                    <img src="[placeholder-unity-final.jpg]" alt="Unityへの実装後の完成モデル" class="process-image">
+                                    <p class="caption">3. Unityへの実装</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="challenge-article js-fade-in">
+                    <h3 class="challenge-title">挑戦②：未経験から挑んだUIアニメーション</h3>
+                    
+                    <div class="challenge-content">
+                        <div class="challenge-text">
+                            <h4 class="challenge-heading">The Challenge (課題)</h4>
+                            <p>デザイナーが「しおり部分をクリックするとメニューが見える」UIアニメーションに最もこだわっていました。当時の私にアニメーション実装の経験はありませんでした。</p>
+                            
+                            <h4 class="challenge-heading">My Approach (行動)</h4>
+                            <ul>
+                                <li>実装方法を調査する中で、特にUnityのAnimatorは日本語の資料が少なかったため、<strong>英語の解説動画</strong>を参考にしながら独学でキャッチアップしました。（特にこちらの動画を参考にしました: <a href="https://youtu.be/BKeva_IlUeE?si=GIbYrBGKZ6gN3ToQ" target="_blank" rel="noopener noreferrer">Unity UI Animation Tutorial</a>）</li>
+                                <li>開発中のものをデザイナーに都度触ってもらい、フィードバックを受けながら、一緒に作成していきました。</li>
+                            </ul>
+                            
+                            <h4 class="challenge-heading">The Result (結果)</h4>
+                            <p>試行錯誤の末、アニメーションを実装することができました。ユーザー体験の向上に貢献するとともに、未知の技術にも臆せず挑戦し、キャッチアップする<strong>自己成長</strong>を遂げることができたのではないかと思います。</p>
+                        </div>
+                        <div class="challenge-visual">
+                            <img src="[placeholder-ui-animation.gif]" alt="実際に動作しているUIアニメーションの動画" class="challenge-animation-video">
+                            <img src="[placeholder-animator-statemachine.png]" alt="Unity Animatorのステートマシン図" class="challenge-statemachine-image">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="tech-stack" class="section js-fade-in">
+            <div class="container">
+                <h2 class="section-title">Tech Stack & Contribution</h2>
+                <p class="section-subtitle">私が<strong>チームに</strong>貢献したこと</p>
+
+                <h3 class="heading-sub">使用技術</h3>
+                <div class="tech-stack-grid">
+                    <div class="tech-item">
+                        <img src="[logo-unity.svg]" alt="Unity Logo" class="tech-logo tech-logo--mine">
+                        <p class="tech-name tech-name--mine">Unity (C#)</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="[logo-blender.svg]" alt="Blender Logo" class="tech-logo tech-logo--mine">
+                        <p class="tech-name tech-name--mine">Blender</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="[logo-github.svg]" alt="GitHub Logo" class="tech-logo tech-logo--mine">
+                        <p class="tech-name tech-name--mine">GitHub</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="[logo-react.svg]" alt="React Logo" class="tech-logo">
+                        <p class="tech-name">React</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="[logo-rails.svg]" alt="Ruby on Rails Logo" class="tech-logo">
+                        <p class="tech-name">Ruby on Rails</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="[logo-mysql.svg]" alt="MySQL Logo" class="tech-logo">
+                        <p class="tech-name">MySQL</p>
+                    </div>
+                </div>
+
+                <h3 class="heading-sub">リポジトリ管理への貢献</h3>
+                <div class="contribution-section">
+                    <p class="contribution-text">ルール策定: チーム開発の効率化のため、ブランチ戦略（Git-flow）の導入と運用ルールを策定し、ドキュメント化しました。</p>
+                    <img src="[placeholder-git-flow-rule.png]" alt="Git-flowブランチ戦略のルール説明図" class="contribution-image">
+                </div>
+            </div>
+        </section>
+
+        <section id="outcome" class="section js-fade-in">
+            <div class="container">
+                <h2 class="section-title">Outcome & What I Learned</h2>
+                <p class="section-subtitle">成果と今後について</p>
+
+                <h3 class="heading-sub">プロジェクトの成果</h3>
+                <p>現在、研究室で本格的に運用できるように、サーバーを調整中です。</p>
+
+                <h3 class="heading-sub">この経験からの学び</h3>
+                <ul class="learning-list">
+                    <li><strong>他職種との連携の面白さ:</strong> デザイナーの「感性」を「技術」に翻訳し、形にするプロセスのやりがいと、そのための密なコミュニケーションの重要性を学びました。</li>
+                    <li><strong>課題解決への執着心:</strong> 目の前の課題に対し、「できない」で終わらせず、あらゆる手段を検討し、取り組む姿勢が身につきました。</li>
+                    <li><strong>未来への意欲:</strong> この経験を通して、ユーザーに最高の体験を届けるためなら、どんな新しい技術にも挑戦し続けたいという想いがより一層強くなりました。</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 kochan-35. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
